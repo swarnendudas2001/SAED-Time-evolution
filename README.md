@@ -13,10 +13,10 @@ dm files (.dm3/4) or tiff files (.tif)
 center: center of the diffraction pattern (in pixels), i.e. the zero beam 000  
   
 **2. Baseline based on Asymmetric least squares smoothing (ALS) method**  
-lam: $\lambda$ for smoothness of the baseline (generally, 10^2 < $\lambda$ < 10^9).  
+lam: $\lambda$ for smoothness of the baseline (generally, $10^2$ $\geq$ $\lambda$ $\geq$ $10^9$).  
   
 p: Asymmetric Factor [0-1]. Specify weight of points above the baseline in each iteration.  
-The asymmetric factor must be between 0 and 1. For positive peaks it should be close to 0 (generally, 0.001 < p < 0.1), and close to 1 for negative peaks.  
+The asymmetric factor must be between 0 and 1. For positive peaks it should be close to 0 (generally, 0.001 $\geq$ p $\geq$ 0.1), and close to 1 for negative peaks.  
 The smaller the asymmetric factor is, the less effect points above the baseline have on baseline in next iteration.  
   
 niter: Specify number of iterations.  
